@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragment.NewOkr_SortBy_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:id="@+id/topLinearLayout_Okr"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:textColor="#333333"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textSize="@dimen/app_text_18"
+            android:text="姓名/部门"
+            android:layout_weight="2.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="#333333"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textSize="@dimen/app_text_18"
+            android:text="排名"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="#333333"
+                android:textSize="@dimen/app_text_18"
+                android:text="通用"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/imageView_arrow_tongyong"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/arrow_group_expand"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="@dimen/app_text_18"
+                android:textColor="#333333"
+                android:text="业务"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/imageView_arrow_yewu"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/arrow_group_expand"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/orange"
+                android:textSize="@dimen/app_text_18"
+                android:text="OKR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/imageView_arrow_okr"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/arrow_group_expand"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:background="@color/tvc9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.zbxn.widget.pulltorefreshlv.PullRefreshListView
+        android:id="@+id/listView_okr_sortList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/pub_line_color"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:headerDividersEnabled="false" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/mOkr"
+        android:icon="@mipmap/okr_ranking"
+        android:title="排行"
+        app:showAsAction="always"/>
+
+
+</menu>

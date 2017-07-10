@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/style_list_trans_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mCaptialChar"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/pub_backgroud_color"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/parent_margin"
+        android:textColor="@color/tvc3"
+        android:textSize="@dimen/app_text_14"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/mLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/parent_margin"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/mCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:padding="@dimen/parent_margin"
+            android:src="@drawable/selector_contacts_check"
+            android:visibility="gone" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mPortrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/parent_margin"
+            android:layout_marginBottom="@dimen/parent_margin"
+            android:src="@mipmap/temp110"
+            app:civ_border_color="@color/pub_backgroud_color"
+            app:civ_border_overlay="true"
+            app:civ_border_width="1dp"
+            app:civ_fill_color="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mRemarkName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/parent_margin"
+                    android:text="姓名"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/app_text_14" />
+
+                <TextView
+                    android:id="@+id/mMobileNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/parent_margin"
+                    android:textColor="@color/app_secondary_text"
+                    android:textSize="@dimen/app_text_14" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/pub_line_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

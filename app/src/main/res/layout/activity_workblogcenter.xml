@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/mDrawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pub_backgroud_color"
+        android:orientation="vertical">
+        <fragment
+            android:id="@+id/mBlogCenterFragment"
+            android:name="com.zbxn.fragment.BlogCenterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/mContactsFragment"
+        android:name="com.zbxn.fragment.AddrBookGroupFragment"
+        android:layout_width="256dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@android:color/white"/>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/umeng_socialize_ucenter_bg"
+              android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/mProgress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="点击填写进度"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColor="@color/tvc3"
+            android:textColorHint="@color/tvc9"
+            android:textSize="@dimen/app_text_14"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:text="%"
+            android:gravity="center"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_20_large"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

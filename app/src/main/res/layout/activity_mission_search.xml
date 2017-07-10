@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:orientation="horizontal"
+    android:padding="@dimen/parent_margin">
+
+    <EditText
+        android:id="@+id/mission_search_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/editsharp"
+        android:drawableLeft="@mipmap/mission_search"
+        android:hint="搜索"
+        android:imeOptions="actionSearch"
+        android:padding="@dimen/parent_margin_top"
+        android:textColor="@color/tvc3"
+        android:textColorHint="@color/tvc9" />
+
+    <TextView
+        android:id="@+id/mission_search_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/parent_margin_top"
+        android:text="取消"
+        android:textColor="@color/tvc6"
+        android:textSize="@dimen/app_text_16_middle" />
+
+</LinearLayout>

@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pub_backgroud_color"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/mTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/parent_margin"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="请输入标题"
+                    android:maxLength="24"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/tvc6"
+                    android:textColorHint="@color/tvc9"
+                    android:textSize="@dimen/app_text_14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <!--<EditText
+                    android:id="@+id/mContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:hint="请输入日程详情"
+                    android:lineSpacingExtra="4dp"
+                    android:maxLength="1000"
+                    android:minLines="4"
+                    android:padding="10dp"
+                    android:textColor="@color/tvc6"
+                    android:textColorHint="@color/tvc9"
+                    android:textSize="@dimen/app_text_14" />-->
+
+                <WebView
+                    android:id="@+id/mContent"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="24dp"
+                        android:text="全天"
+                        android:textColor="@color/tvc3" />
+
+                    <com.zcw.togglebutton.ToggleButton
+                        android:id="@+id/mToggleButton"
+                        android:layout_width="54dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="@dimen/app_text_10"
+                        toggle:tbBorderWidth="1dp"
+                        toggle:tbOffBorderColor="#d7d2d2"
+                        toggle:tbOffColor="#efefee"
+                        toggle:tbOnColor="@color/main_tab_text_blue"
+                        toggle:tbSpotColor="@color/pub_backgroud_color"></com.zcw.togglebutton.ToggleButton>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/pub_backgroud_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="24dp"
+                            android:text="开始时间"
+                            android:textColor="@color/tvc3" />
+
+                        <TextView
+                            android:id="@+id/mStartTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="@dimen/app_text_18"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:hint="选择开始时间"
+                            android:textColor="@color/tvc3"
+                            android:textColorHint="@color/tvc9"
+                            android:textSize="@dimen/app_text_14" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/pub_backgroud_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="24dp"
+                            android:text="结束时间"
+                            android:textColor="@color/tvc3" />
+
+                        <TextView
+                            android:id="@+id/mEndTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="@dimen/app_text_18"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:hint="选择结束时间"
+                            android:textColor="@color/tvc3"
+                            android:textColorHint="@color/tvc9"
+                            android:textSize="@dimen/app_text_14" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/pub_backgroud_color" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="24dp"
+                        android:text="地点"
+                        android:textColor="@color/tvc3" />
+
+                    <EditText
+                        android:id="@+id/mPlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/app_text_10"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical|right"
+                        android:hint="请输入地点"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/tvc6"
+                        android:textColorHint="@color/tvc9"
+                        android:textSize="@dimen/app_text_14" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/pub_backgroud_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="24dp"
+                        android:text="提醒"
+                        android:textColor="@color/tvc3" />
+
+                    <com.zcw.togglebutton.ToggleButton
+                        android:id="@+id/mToggleButtonRemind"
+                        android:layout_width="54dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="@dimen/app_text_10"
+                        toggle:tbBorderWidth="1dp"
+                        toggle:tbOffBorderColor="#d7d2d2"
+                        toggle:tbOffColor="#efefee"
+                        toggle:tbOnColor="@color/main_tab_text_blue"
+                        toggle:tbSpotColor="@color/pub_backgroud_color" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mRemind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="24dp"
+                        android:text="提醒类型"
+                        android:textColor="@color/tvc3" />
+
+                    <TextView
+                        android:id="@+id/myRemind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|right"
+                        android:hint="请选择类型"
+                        android:text="十分钟前"
+                        android:textColor="@color/tvc3"
+                        android:textColorHint="@color/tvc9"
+                        android:textSize="@dimen/app_text_14" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="@dimen/app_text_10"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/bg_divider_1" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/mRepeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="24dp"
+                        android:text="重复"
+                        android:textColor="@color/tvc3" />
+
+                    <TextView
+                        android:id="@+id/myRepeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/app_text_10"
+                        android:hint="不重复"
+                        android:textColor="@color/tvc3"
+                        android:textColorHint="@color/tvc9"
+                        android:textSize="@dimen/app_text_14" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="@dimen/app_text_10"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/bg_divider_1" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/pub_backgroud_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/mSharedperson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/parent_margin_large"
+                        android:layout_marginTop="@dimen/parent_margin_large"
+                        android:gravity="center"
+                        android:paddingLeft="24dp"
+                        android:text="共享人"
+                        android:textColor="@color/tvc3" />
+
+                    <TextView
+                        android:id="@+id/mySharedperson"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="请选择共享人"
+                        android:textColor="@color/tvc9"
+                        android:textSize="@dimen/app_text_14" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="@dimen/app_text_10"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/bg_divider_1" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/pub_backgroud_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/mParticipant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/parent_margin_large"
+                        android:layout_marginTop="@dimen/parent_margin_large"
+                        android:gravity="center"
+                        android:paddingLeft="24dp"
+                        android:text="参与人"
+                        android:textColor="@color/tvc3" />
+
+                    <TextView
+                        android:id="@+id/mReceiveUsers"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="请选择参与人"
+                        android:textColor="@color/tvc9"
+                        android:textSize="@dimen/app_text_14" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="@dimen/app_text_10"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/bg_divider_1" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="24dp"
+                android:background="@color/pub_backgroud_color" />
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/mScheduleButton"
+                style="@style/circularprogressbutton_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textSize="@dimen/app_text_16_middle"
+                android:visibility="gone"
+                app:cpb_textIdle="删除" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

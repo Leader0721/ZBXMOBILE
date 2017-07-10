@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App主题色 -->
+    <!--<color name="app_theme">#009688</color>-->
+    <color name="app_theme">#454D57</color>
+    <!-- AppCompat配色 -->
+    <color name="app_colorPrimary">#454D57</color>
+    <color name="app_colorPrimaryDark">#000000</color>
+    <color name="app_colorAccent">#607D8B</color>
+    <color name="textColorPrimary">@color/tvc6</color>
+    <color name="app_primary_light">#B2DFDB</color>
+    <color name="app_primary_text">#FF323232</color>
+    <color name="app_secondary_text">#727272</color>
+    <color name="app_divider">#B6B6B6</color>
+    <color name="app_divider_lightGray">#D6D6D6</color>
+    <!-- App主题色 end -->
+
+
+</resources>

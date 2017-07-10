@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/style_list_trans_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/parent_margin_large">
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/cardview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="@dimen/app_card_margin"-->
+    <!--android:foreground="?attr/selectableItemBackground"-->
+    <!--app:cardBackgroundColor="@android:color/white"-->
+    <!--app:cardCornerRadius="0dp" >-->
+
+
+    <TextView
+        android:id="@+id/mContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="2"
+        android:textColor="@color/app_secondary_text"
+        android:textSize="@dimen/app_text_16_middle" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/parent_margin_top"
+        android:paddingRight="@dimen/parent_margin"
+        android:paddingTop="@dimen/parent_margin_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/app_primary_text"
+                android:textSize="@dimen/app_text_16_middle"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/mCreateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/parent_margin_top"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="刚刚"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_12_small" />
+
+            <TextView
+                android:id="@+id/mCreateWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/parent_margin_large"
+                android:gravity="center"
+                android:text="星期一"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_12_small" />
+
+            <TextView
+                android:id="@+id/mCommentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/parent_margin_large"
+                android:gravity="center"
+                android:text="评论:"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_12_small" />
+
+            <ImageView
+                android:id="@+id/mOriginImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/parent_margin_top"
+                android:src="@mipmap/bg_mobile" />
+
+            <TextView
+                android:id="@+id/mOrigin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="来自移动端"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_12_small"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/mBlogNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/app_primary_light"
+                android:textSize="@dimen/app_text_12_small"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--</android.support.v7.widget.CardView>-->
+
+</LinearLayout>

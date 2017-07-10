@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mPortrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/temp110"
+            app:civ_border_color="@color/app_divider"
+            app:civ_border_overlay="true"
+            app:civ_border_width="1px"
+            app:civ_fill_color="@color/pub_backgroud_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:id="@+id/new_okr_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名rrrrrrrrr"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_18" />
+
+            <TextView
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:id="@+id/new_okr_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="部门11111111111111111"
+                android:textColor="@color/tvc6"
+                android:textSize="@dimen/app_text_14" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/new_okr_ranking"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_18" />
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/new_okr_general"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="@dimen/app_text_18" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/new_okr_business"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="@dimen/app_text_18" />
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/new_okr_okr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="OKR"
+        android:textColor="#FD6500"
+        android:textSize="@dimen/app_text_18" />
+
+
+
+
+</LinearLayout>

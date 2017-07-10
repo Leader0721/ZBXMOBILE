@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PtrFrameLayout">
+        <!-- Optional. If you put header and content in xml, you can you these to specify them. -->
+        <attr name="ptr_header" format="reference" />
+        <attr name="ptr_content" format="reference" />
+
+        <!-- the resistance when you are moving the frame -->
+        <!-- 阻尼系数，默认: 1.7f，越大，感觉下拉时越吃力 -->
+        <attr name="ptr_resistance" format="float" />
+
+        <!-- the ration of the height of the header to trigger refresh -->
+        <!-- 触发刷新时移动的位置比例，默认，1.2f，移动达到头部高度 1.2 倍时可触发刷新操作 -->
+        <attr name="ptr_ratio_of_header_height_to_refresh" format="float" />
+
+        <!-- 回弹延时，默认 200ms，回弹到刷新高度所用时间 -->
+        <attr name="ptr_duration_to_close" format="integer" />
+        <!-- 头部回弹时间，默认 1000ms -->
+        <attr name="ptr_duration_to_close_header" format="integer" />
+
+        <!-- pull to refresh, otherwise release to refresh, default is release to refresh -->
+        <!-- 刷新是否保持头部，默认值 true -->
+        <attr name="ptr_pull_to_fresh" format="boolean" />
+
+        <!-- keep header when refreshing-->
+        <!-- 下拉刷新/释放刷新，默认为释放刷新 -->
+        <attr name="ptr_keep_header_when_refresh" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PtrClassicHeader">
+        <!-- 经典头部的动画效果使用箭头的翻转来表示，这里会箭头翻转的动画播放时间，默认为150毫秒 -->
+        <attr name="ptr_rotate_ani_time" format="integer" />
+    </declare-styleable>
+</resources>

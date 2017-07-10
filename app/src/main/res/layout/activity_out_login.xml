@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_alert_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/parent_margin"
+            android:layout_marginRight="@dimen/parent_margin"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="3dp"
+            android:text="下线提醒"
+            android:textColor="@color/tvc3"
+            android:textSize="@dimen/app_text_16_middle" />
+
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/parent_margin"
+            android:layout_marginRight="@dimen/parent_margin"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_16_middle" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginLeft="@dimen/parent_margin"
+            android:layout_marginRight="@dimen/parent_margin"
+            android:background="@color/pub_line_color"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="@dimen/parent_margin"
+                android:text="退出"
+                android:textColor="@color/main_tab_text_blue"
+                android:textSize="@dimen/app_text_16_middle" />
+
+            <TextView
+                android:id="@+id/dialog_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="@dimen/parent_margin"
+                android:text="重新登录"
+                android:textColor="@color/main_tab_text_blue"
+                android:textSize="@dimen/app_text_16_middle" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

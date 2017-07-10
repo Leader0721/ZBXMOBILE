@@ -1,0 +1,224 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrollView_okr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/parent_margin"
+                android:layout_marginTop="10dp"
+                android:text="条件筛选"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_16_middle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/pub_line_color" />
+
+            <com.zbxn.widget.flowlayout.FlowLayout
+                android:id="@+id/gridView_selectByCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+            </com.zbxn.widget.flowlayout.FlowLayout>
+
+            <com.zbxn.widget.flowlayout.FlowLayout
+                android:id="@+id/gridView_selectBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp">
+            </com.zbxn.widget.flowlayout.FlowLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/pub_line_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/parent_margin"
+                android:layout_marginTop="@dimen/parent_margin"
+                android:text="自定义筛选"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_16_middle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/pub_line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/parent_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/parent_margin"
+                    android:text="按部门"
+                    android:textColor="@color/tvc6"
+                    android:textSize="@dimen/app_text_14" />
+
+                <LinearLayout
+                    android:id="@+id/all_department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/parent_margin_top">
+                    <TextView
+                        android:id="@+id/textView_selectByDepartment_expand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/cpb_blue"
+                        android:textSize="@dimen/app_text_14" />
+
+                    <ImageView
+                        android:id="@+id/imageView_selectByDepartment_newOkr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/home_arrows_down" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.zbxn.widget.flowlayout.FlowLayout
+                android:id="@+id/gridView_selectByDepartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginTop="@dimen/parent_margin_top" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/parent_margin"
+                    android:text="按年"
+                    android:textColor="@color/tvc6"
+                    android:textSize="@dimen/app_text_14" />
+            </RelativeLayout>
+
+            <com.zbxn.widget.flowlayout.FlowLayout
+                android:id="@+id/gridView_selectByYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginTop="@dimen/parent_margin_top" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/parent_margin"
+                    android:text="按月"
+                    android:textColor="@color/tvc6"
+                    android:textSize="@dimen/app_text_14" />
+
+                <LinearLayout
+                    android:id="@+id/all_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/parent_margin_top">
+
+                    <TextView
+                        android:id="@+id/textView_selectByMonth_expand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/cpb_blue"
+                        android:textSize="@dimen/app_text_14" />
+
+                    <ImageView
+                        android:id="@+id/imageView_selectByMonth_newOkr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/home_arrows_down" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.zbxn.widget.flowlayout.FlowLayout
+                android:id="@+id/gridView_selectByMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginTop="@dimen/parent_margin_top" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_default_newokr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_button_moren"
+            android:gravity="center"
+            android:text="默认"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_16_middle" />
+
+        <TextView
+            android:id="@+id/textView_certain_newokr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cpb_blue"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_text_16_middle" />
+    </LinearLayout>
+</RelativeLayout>

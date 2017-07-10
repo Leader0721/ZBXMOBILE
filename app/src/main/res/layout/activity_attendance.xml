@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:clickable="true" />
+
+    <ImageView
+        android:id="@+id/image_location"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/mapview"
+        android:layout_margin="@dimen/parent_margin"
+        android:background="@drawable/selector_btn_white"
+        android:padding="5dp"
+        android:src="@mipmap/target" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mapview"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/parent_margin"
+                android:background="@color/pub_backgroud_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/parent_margin">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/time" />
+
+                <TextView
+                    android:id="@+id/mTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/parent_margin"
+                    android:paddingTop="@dimen/parent_margin_top"
+                    android:text=""
+                    android:textColor="@color/tvc6"
+                    android:textSize="@dimen/app_text_14" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/pub_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/parent_margin">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/address" />
+
+                <TextView
+                    android:id="@+id/mAddr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/parent_margin"
+                    android:paddingTop="@dimen/parent_margin_top"
+                    android:text=""
+                    android:textColor="@color/tvc6"
+                    android:textSize="@dimen/app_text_14" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/parent_margin"
+                android:background="@color/pub_backgroud_color" />
+
+            <com.zbxn.widget.MyListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/parent_margin"
+                android:divider="@color/pub_line_color"
+                android:dividerHeight="@dimen/line_height"
+                android:footerDividersEnabled="true" />
+            <com.zbxn.widget.MyListView
+                android:id="@+id/listview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/parent_margin"
+                android:divider="@color/pub_line_color"
+                android:dividerHeight="@dimen/line_height"
+                android:footerDividersEnabled="true" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/mAdd"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="24dp"
+        android:clickable="true"
+        android:src="@drawable/fingerprint_selector" />
+
+
+</RelativeLayout>

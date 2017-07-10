@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF2F2F2"
+    android:orientation="vertical"
+    tools:context=".activity.mission.MissionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_mission_name"
+                style="@style/mission_ll_light">
+
+                <TextView
+                    style="@style/mission_textview_left"
+                    android:text="任务名称:" />
+
+                <EditText
+                    android:id="@+id/et_mission_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="点击填写(必填)"
+                    android:maxLength="200"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/tvc3"
+                    android:textColorHint="@color/tvc9"
+                    android:textSize="@dimen/app_text_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                style="@style/mission_ll_light">
+
+                <TextView
+                    style="@style/mission_textview_left"
+                    android:text="截止时间:" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    style="@style/mission_textview_right"
+                    android:hint="请选择(必填)"
+                    android:textColor="#F7931E" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="7dp"
+                    android:src="@mipmap/rignt_arrow" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_work_hours"
+                style="@style/mission_ll_light"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/mission_textview_left"
+                    android:text="工作量(小时):" />
+
+                <EditText
+                    android:id="@+id/et_work_hours"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="点击填写(必填)"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/tvc3"
+                    android:textColorHint="@color/tvc9"
+                    android:textSize="@dimen/app_text_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_charge_people"
+                style="@style/mission_ll_light"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:src="@mipmap/people_1" />
+
+                <TextView
+                    style="@style/mission_textview_left"
+                    android:text="负责人" />
+
+                <TextView
+                    android:id="@+id/tv_charge_people"
+                    style="@style/mission_textview_right"
+                    android:hint="请选择(必填)"
+                    android:textColor="@color/tvc3"
+                    android:textColorHint="@color/tvc9" />
+
+                <ImageView
+                    android:id="@+id/iv_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="7dp"
+                    android:src="@mipmap/rignt_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_executor_people"
+                style="@style/mission_ll_light"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:src="@mipmap/people_2" />
+
+                <TextView
+                    style="@style/mission_textview_left"
+                    android:text="执行人" />
+
+                <TextView
+                    android:id="@+id/tv_executor_people"
+                    style="@style/mission_textview_right"
+                    android:hint="请选择(必填)"
+                    android:textColor="@color/tvc3"
+                    android:textColorHint="@color/tvc9" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="7dp"
+                    android:src="@mipmap/rignt_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checker_people"
+                style="@style/mission_ll_light"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:src="@mipmap/people_1" />
+
+                <TextView
+                    style="@style/mission_textview_left"
+                    android:text="审核人" />
+
+                <TextView
+                    android:id="@+id/tv_checker_people"
+                    style="@style/mission_textview_right"
+                    android:hint="请选择(必填)"
+                    android:textColor="@color/tvc3"
+                    android:textColorHint="@color/tvc9" />
+
+                <ImageView
+                    android:id="@+id/iv_checker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="7dp"
+                    android:src="@mipmap/rignt_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_copy_people"
+                style="@style/mission_ll_light"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:src="@mipmap/people_2" />
+
+                <TextView
+                    style="@style/mission_textview_left"
+                    android:text="抄送人" />
+
+                <TextView
+                    android:id="@+id/tv_copy_people"
+                    style="@style/mission_textview_right"
+                    android:hint="请选择(选填)"
+                    android:textColor="@color/tvc3"
+                    android:textColorHint="@color/tvc9" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="7dp"
+                    android:src="@mipmap/rignt_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_difficulty"
+                style="@style/mission_ll_light">
+
+                <TextView
+                    style="@style/mission_textview_left"
+                    android:text="难易程度" />
+
+                <TextView
+                    android:id="@+id/tv_difficulty"
+                    style="@style/mission_textview_right"
+                    android:text="普通"
+                    android:textColor="@color/orange" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="7dp"
+                    android:src="@mipmap/rignt_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_level"
+                style="@style/mission_ll_light"
+
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/mission_textview_left"
+                    android:text="等级" />
+
+                <TextView
+                    android:id="@+id/tv_level"
+                    style="@style/mission_textview_right"
+                    android:text="正常"
+                    android:textColor="@color/orange" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="7dp"
+                    android:src="@mipmap/rignt_arrow" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_text_14">
+
+                <widget.slidebottompanel.SlideBottomPanel
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:sbp_background_layout="@layout/mission_describe"
+                    app:sbp_panel_height="280dp"
+                    app:sbp_title_height_no_display="0dp">
+
+                </widget.slidebottompanel.SlideBottomPanel>
+            </RelativeLayout>
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/bt_save"
+                style="@style/circularprogressbutton_default"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="24dp"
+                android:textSize="@dimen/app_text_16_middle"
+                app:cpb_textIdle="保存并新建子任务" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

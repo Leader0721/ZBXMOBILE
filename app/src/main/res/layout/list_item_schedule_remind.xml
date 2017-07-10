@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/style_list_trans_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mRepeat1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ripple"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/myRemind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/parent_margin_large"
+            android:paddingLeft="@dimen/parent_margin_large"
+            android:paddingTop="@dimen/parent_margin_large"
+            android:text="不提醒"
+            android:textColor="@color/app_primary_text"
+            android:textSize="@dimen/app_text_14" />
+
+        <ImageView
+            android:id="@+id/mImageview"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="@dimen/parent_margin_large"
+            android:src="@mipmap/duihao"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="@dimen/parent_margin_large"
+        android:layout_marginRight="@dimen/parent_margin_large"
+        android:background="@color/pub_line_color" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/mSearchContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:imeOptions="actionSearch"
+        android:lines="1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:singleLine="true"
+        android:text="ZMS"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/mBtnBack"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="8dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/bg_back_default" />
+
+
+</RelativeLayout>

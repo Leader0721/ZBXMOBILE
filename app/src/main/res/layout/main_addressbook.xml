@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <widget.smarttablayout.SmartTabLayout
+            android:id="@+id/mSmartTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/app_colorPrimary"
+            android:paddingBottom="2dp"
+            app:stl_customTabTextLayoutId="@layout/workblogdetail_tab"
+            app:stl_customTabTextViewId="@+id/textview_tabname"
+            app:stl_indicatorColor="@color/main_tab_text_blue"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_indicatorThickness="2dp"
+            app:stl_underlineThickness="2dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/mViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:id="@+id/mTopShader"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

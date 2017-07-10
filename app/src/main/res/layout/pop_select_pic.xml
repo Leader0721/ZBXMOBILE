@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/m_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="打开照相机"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_16_middle" />
+
+        <TextView
+            android:id="@+id/m_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="从手机相册获取"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_16_middle" />
+
+        <TextView
+            android:id="@+id/m_tv3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_16_middle" />
+    </LinearLayout>
+</RelativeLayout>  

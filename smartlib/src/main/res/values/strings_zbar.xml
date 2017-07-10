@@ -1,0 +1,6 @@
+<resources>
+
+    <string name="zbar_top_hint">取景框对准条形码或二维码</string>
+    <string name="zbar_msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+
+</resources>

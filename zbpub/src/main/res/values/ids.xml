@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- APP名称 -->
+    <item name="app_name" type="string"/>
+    <!-- 图标 -->
+    <item name="ic_launcher" type="mipmap"/>
+    <!-- App主题色 -->
+    <item name="app_theme" type="color"/>
+    <!-- AppCompat配色 -->
+    <item name="app_colorPrimary" type="color"/>
+    <item name="app_colorPrimaryDark" type="color"/>
+    <item name="app_colorAccent" type="color"/>
+    <item name="app_primary_light" type="color"/>
+    <item name="app_primary_text" type="color"/>
+    <item name="app_secondary_text" type="color"/>
+    <item name="app_divider" type="color"/>
+
+</resources>

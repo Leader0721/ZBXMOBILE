@@ -1,0 +1,23 @@
+<resources>
+
+    <dimen name="app_text_8">8sp</dimen>
+    <dimen name="app_text_10">10sp</dimen>
+    <dimen name="app_text_12_small">12sp</dimen>
+    <dimen name="app_text_14">14sp</dimen>
+    <dimen name="app_text_16_middle">16sp</dimen>
+    <dimen name="app_text_15">15sp</dimen>
+    <dimen name="app_text_18">18sp</dimen>
+    <dimen name="app_text_20_large">20sp</dimen>
+    <dimen name="app_text_22">22sp</dimen>
+
+    <!-- 框高 -->
+    <dimen name="kuang_height">50dp</dimen>
+    <!-- 边框距离普通 -->
+    <dimen name="parent_margin">10dp</dimen>
+    <!-- 距离上边框距离 -->
+    <dimen name="parent_margin_top">5dp</dimen>
+    <!-- 边框距离大 -->
+    <dimen name="parent_margin_large">15dp</dimen>
+    <!-- 分割线高度 -->
+    <dimen name="line_height">0.5dp</dimen>
+</resources>

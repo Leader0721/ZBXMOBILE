@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/style_list_trans_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mCaptialChar"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/pub_backgroud_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:textColor="@color/tvc3"
+        android:textSize="@dimen/app_text_14"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <CheckBox
+            android:id="@+id/mCheckBox"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/parent_margin"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mPortrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/temp110"
+            app:civ_border_color="@color/pub_backgroud_color"
+            app:civ_border_overlay="true"
+            app:civ_border_width="1dp"
+            app:civ_fill_color="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/mRemarkName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="姓名"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/mMobileNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:textColor="@color/app_secondary_text"
+            android:textSize="@dimen/app_text_12_small"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/parent_margin"
+            android:layout_marginLeft="@dimen/parent_margin"
+            android:layout_marginTop="@dimen/parent_margin"
+            android:layout_weight="1"
+            android:background="@drawable/selector_search_bg">
+
+            <EditText
+                android:id="@+id/editText_newOkr_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/parent_margin"
+                android:background="@null"
+                android:drawableLeft="@mipmap/pub_nav_search"
+                android:drawablePadding="@dimen/parent_margin"
+                android:hint="搜索"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/tvc6"
+                android:textColorHint="@color/tvc9"
+                android:textSize="@dimen/app_text_14" />
+            <ImageView
+                android:id="@+id/delete_hint"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/pub_ico_close_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/newOkr_Search_Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/parent_margin"
+            android:paddingRight="@dimen/parent_margin"
+            android:text="取消"
+            android:textColor="@color/main_tab_text_blue"
+            android:textSize="@dimen/app_text_16_middle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:focusable="true" />
+
+    <com.zbxn.widget.SearchEditTextView
+        android:id="@+id/search_edit"
+        style="@style/StyleEditText"
+        android:layout_margin="@dimen/parent_margin"
+        android:hint="搜索"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layout_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/mLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:drawablePadding="@dimen/parent_margin_top"
+                android:drawableRight="@mipmap/arrow_group_expand"
+                android:gravity="center"
+                android:text="类型"
+                android:textColor="@color/app_primary_text"
+                android:textSize="@dimen/app_text_14">
+
+            </TextView>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/line_height"
+            android:layout_height="40dp"
+            android:background="@color/pub_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/layout_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/mRight"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:drawablePadding="@dimen/parent_margin_top"
+                android:drawableRight="@mipmap/arrow_group_expand"
+                android:gravity="center"
+                android:text="状态"
+                android:textColor="@color/app_primary_text"
+                android:textSize="@dimen/app_text_14" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/app_divider_lightGray" />
+
+    <com.zbxn.widget.pulltorefreshlv.PullRefreshListView
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:headerDividersEnabled="false" />
+
+</LinearLayout>

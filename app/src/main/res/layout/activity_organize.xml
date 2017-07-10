@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/mLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/mLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <com.zbxn.widget.MyScrollViewNoRefresh
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layout_tip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/parent_margin"
+                android:background="@color/pub_backgroud_color"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/tv_department_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pub_backgroud_color"
+                android:paddingBottom="@dimen/parent_margin_top"
+                android:paddingLeft="@dimen/parent_margin"
+                android:paddingRight="@dimen/parent_margin"
+                android:paddingTop="@dimen/parent_margin_top"
+                android:text="下级部门"
+                android:textColor="@color/tvc9"
+                android:textSize="@dimen/app_text_14" />
+
+            <com.zbxn.widget.MyListView
+                android:id="@+id/mListViewDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/pub_line_color"
+                android:dividerHeight="0dp"
+                android:footerDividersEnabled="true" />
+
+            <TextView
+                android:id="@+id/tv_people_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pub_backgroud_color"
+                android:paddingBottom="@dimen/parent_margin_top"
+                android:paddingLeft="@dimen/parent_margin"
+                android:paddingRight="@dimen/parent_margin"
+                android:paddingTop="@dimen/parent_margin_top"
+                android:text="部门人员"
+                android:textColor="@color/tvc9"
+                android:textSize="@dimen/app_text_14" />
+
+            <com.zbxn.widget.MyListView
+                android:id="@+id/mListViewPeople"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/pub_line_color"
+                android:dividerHeight="0dp"
+                android:footerDividersEnabled="true" />
+        </LinearLayout>
+    </com.zbxn.widget.MyScrollViewNoRefresh>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/pub_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addDept"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_ripple"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="新增部门"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_14" />
+
+        <View
+            android:layout_width="@dimen/line_height"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/parent_margin"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/parent_margin"
+            android:background="@color/pub_line_color" />
+
+        <TextView
+            android:id="@+id/addEmployee"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_ripple"
+            android:gravity="center"
+            android:visibility="visible"
+            android:padding="5dp"
+            android:text="新增员工"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_14" />
+
+        <View
+            android:layout_width="@dimen/line_height"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/parent_margin"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/parent_margin"
+            android:background="@color/pub_line_color" />
+
+        <TextView
+            android:id="@+id/inviteEmployee"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_ripple"
+            android:gravity="center"
+            android:visibility="visible"
+            android:padding="5dp"
+            android:text="邀请员工"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_14" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

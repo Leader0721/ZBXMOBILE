@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_undo"
+        android:icon="@mipmap/ic_action_undo"
+        android:title="撤销"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_redo"
+        android:icon="@mipmap/ic_action_redo"
+        android:title="恢复"
+        app:showAsAction="always"/>
+    <!--<item
+        android:id="@+id/action_hint"
+        android:title="懒汉模式"
+        app:showAsAction="never"/>
+-->
+</menu>

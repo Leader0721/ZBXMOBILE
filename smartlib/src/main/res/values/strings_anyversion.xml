@@ -1,0 +1,4 @@
+<resources>
+    <string name="anyversion_update_now">后台更新</string>
+    <string name="anyversion_later">取消</string>
+</resources>

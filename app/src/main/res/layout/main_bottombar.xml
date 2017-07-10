@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 首页——底部菜单栏 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/pub_backgroud_color"/>
+
+    <LinearLayout
+        android:id="@+id/layout_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/bg_main_message_check"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:gravity="top"
+                android:text="消息"
+                android:tag="           消息"
+                android:textColor="@color/main_tab_text_blue"
+                android:textSize="@dimen/app_text_10"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/bg_main_tools_uncheck"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:gravity="top"
+                android:text="应用"
+                android:tag="应用"
+                android:textColor="@color/main_tab_text_gray"
+                android:textSize="@dimen/app_text_10"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="64dp"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/bg_main_contact_uncheck"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:gravity="top"
+                android:text="通讯录"
+                android:tag="             通讯录"
+                android:textColor="@color/main_tab_text_gray"
+                android:textSize="@dimen/app_text_10"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/bg_main_membercenter_uncheck"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:gravity="top"
+                android:text="我的"
+                android:tag="我的"
+                android:textColor="@color/main_tab_text_gray"
+                android:textSize="@dimen/app_text_10"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <widget.pulltorefresh.PtrFrameLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ptr_content="@+id/scrollview_content"
+        app:ptr_pull_to_fresh="true">
+
+        <widget.pulltorefresh.header.MaterialHeader
+            android:id="@+id/layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:paddingBottom="@dimen/parent_margin_top"
+            android:paddingTop="@dimen/parent_margin_top" />
+
+        <ScrollView
+            android:id="@+id/message_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp">
+
+                    <TextView
+                        android:id="@+id/mTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="2dp"
+                        android:maxLines="2"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="12dp"
+                        android:textColor="@color/tvc3"
+                        android:textSize="@dimen/app_text_20_large"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_height"
+                        android:layout_marginLeft="@dimen/parent_margin"
+                        android:layout_marginRight="@dimen/parent_margin"
+                        android:background="@color/pub_line_color"
+                        android:paddingBottom="@dimen/parent_margin_top"
+                        android:paddingTop="@dimen/parent_margin_top" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/parent_margin_top"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mCreateUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|left"
+                            android:singleLine="true"
+                            android:textColor="@color/tvc9"
+                            android:textSize="@dimen/app_text_10" />
+
+                        <TextView
+                            android:id="@+id/mCreateTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:singleLine="true"
+                            android:textColor="@color/tvc9"
+                            android:textSize="@dimen/app_text_10" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <com.zbxn.pub.widget.ProgressWebView
+                    android:id="@+id/mProgressWebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:scrollbarAlwaysDrawHorizontalTrack="false"
+                    android:scrollbarAlwaysDrawVerticalTrack="false" />
+                <!--<fragment
+                    android:id="@+id/mWebViewFragment"
+                    android:name="WebViewFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>-->
+
+                <fragment
+                    android:id="@+id/mCommentFragment"
+                    android:name="com.zbxn.fragment.CommentFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="55dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </widget.pulltorefresh.PtrFrameLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pub_backgroud_color"
+        android:gravity="center"
+        android:padding="@dimen/app_text_8">
+
+        <EditText
+            android:id="@+id/mComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/style_comment"
+            android:gravity="center|left"
+            android:hint="写评论..."
+            android:maxLength="1000"
+            android:minLines="4"
+            android:padding="@dimen/app_text_8"
+            android:textColor="@color/tvc3"
+            android:textColorHint="@color/tvc9"
+            android:textSize="@dimen/app_text_12_small" />
+
+        <TextView
+            android:id="@+id/mPublish"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="发表"
+            android:textColor="@color/app_primary_text" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mAlertMessage"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.6"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="附件信息请前往web端查看"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/app_text_14"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

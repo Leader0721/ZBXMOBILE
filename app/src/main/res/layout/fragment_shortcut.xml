@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/mRootLayout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_main_shortcut_bg"
+              android:clickable="true"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/mAnnouncementLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/mCreateAnnouncement"
+                    android:clickable="true"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:padding="12dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_circle_1"
+                        android:padding="20dp"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/temp133"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发布公告"
+                    android:textColor="@color/tvc3"
+                    android:textSize="@dimen/app_text_14"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mBlogLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/mCreateWorkBlog"
+                    android:clickable="true"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:padding="12dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_circle_1"
+                        android:padding="20dp"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/temp134"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="写日志"
+                    android:textColor="@color/tvc3"
+                    android:textSize="@dimen/app_text_14"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    </LinearLayout>
+
+</LinearLayout>

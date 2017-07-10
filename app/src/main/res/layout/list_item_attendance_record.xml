@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/parent_margin"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/parent_margin"
+                android:paddingTop="@dimen/parent_margin">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/parent_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="签到:"
+                            android:textColor="@color/tvc6" />
+
+                        <TextView
+                            android:id="@+id/mState"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="正常"
+                            android:textColor="@color/orange" />
+
+                        <TextView
+                            android:id="@+id/mTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/parent_margin"
+                            android:gravity="center"
+                            android:text="11:20"
+                            android:textColor="@color/tvc6" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mAddressLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/mAddr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/parent_margin"
+                            android:layout_marginRight="@dimen/parent_margin"
+                            android:layout_weight="1"
+                            android:paddingTop="5dp"
+                            android:text="山东省济南市天辰路吉美乐大厦"
+                            android:textColor="@color/tvc6" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/mHandle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/parent_margin"
+                    android:background="@drawable/selector_btn_orange"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="@dimen/parent_margin"
+                    android:paddingRight="@dimen/parent_margin"
+                    android:paddingTop="5dp"
+                    android:text="申诉"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/mHandleTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/parent_margin"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="@dimen/parent_margin"
+                    android:paddingRight="@dimen/parent_margin"
+                    android:paddingTop="5dp"
+                    android:text="申诉状态"
+                    android:textColor="@color/orange"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/pub_line_color" />
+
+            <LinearLayout
+                android:id="@+id/mLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/parent_margin"
+                android:paddingTop="@dimen/parent_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/parent_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="签退:"
+                            android:textColor="@color/tvc6" />
+
+                        <TextView
+                            android:id="@+id/mState2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="正常"
+                            android:textColor="@color/orange" />
+
+                        <TextView
+                            android:id="@+id/mTime2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/parent_margin"
+                            android:gravity="center"
+                            android:text="11:20"
+                            android:textColor="@color/tvc6" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mAddressLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/mAddr2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/parent_margin"
+                            android:layout_marginRight="@dimen/parent_margin"
+                            android:layout_weight="1"
+                            android:paddingTop="5dp"
+                            android:text="山东省济南市天辰路吉美乐大厦"
+                            android:textColor="@color/tvc6" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/mHandle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/parent_margin"
+                    android:background="@drawable/selector_btn_orange"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="@dimen/parent_margin"
+                    android:paddingRight="@dimen/parent_margin"
+                    android:paddingTop="5dp"
+                    android:text="申诉"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/mHandleTip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/parent_margin"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="@dimen/parent_margin"
+                    android:paddingRight="@dimen/parent_margin"
+                    android:paddingTop="5dp"
+                    android:text="申诉状态"
+                    android:textColor="@color/orange"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/parent_margin"
+        android:background="@color/pub_line_color" />
+
+</LinearLayout>

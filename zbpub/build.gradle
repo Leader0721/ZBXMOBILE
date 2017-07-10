@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.0"
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            // 移除无用的resource文件
+            shrinkResources true
+            zipAlignEnabled true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile project(':smartlib')
+    compile files('libs/jpush-android-2.1.9.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile 'com.jakewharton:butterknife:8.2.1'
+    compile files('libs/umeng-analytics-v6.0.3.jar')
+    compile files('libs/utdid4all-1.0.4.jar')
+    compile 'com.squareup.retrofit2:retrofit:2.0.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.+'
+    compile 'com.android.support:multidex:1.0.1'
+}

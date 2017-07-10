@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <widget.smarttablayout.SmartTabLayout
+            android:id="@+id/mSmartTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/app_colorPrimary"
+            android:paddingBottom="2dp"
+            app:stl_customTabTextLayoutId="@layout/workblogdetail_tab"
+            app:stl_customTabTextViewId="@+id/textview_tabname"
+            app:stl_indicatorColor="@color/app_primary_light"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_indicatorThickness="2dp"
+            android:visibility="gone"
+            app:stl_underlineThickness="2dp" />
+
+        <com.zbxn.pub.widget.NoScrollViewPager
+            android:id="@+id/mViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pub_backgroud_color"
+        android:gravity="center"
+        android:padding="@dimen/app_text_8">
+
+        <EditText
+            android:id="@+id/mComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/style_comment"
+            android:gravity="center|left"
+            android:hint="写评论..."
+            android:maxLength="1000"
+            android:minLines="4"
+            android:padding="@dimen/app_text_8"
+            android:textColor="@color/tvc3"
+            android:textSize="@dimen/app_text_12_small"
+            android:textColorHint="@color/tvc9"/>
+
+        <TextView
+            android:id="@+id/mPublish"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:text="发表"
+            android:gravity="center"
+            android:textColor="@color/app_primary_text"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

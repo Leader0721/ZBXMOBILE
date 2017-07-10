@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/blog_creat"
+        android:icon="@mipmap/menu_creat_blog"
+        android:title="创建日志"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/blog_switch"
+        android:icon="@mipmap/menu_blog_switch"
+        android:title="切换"
+        app:showAsAction="always" />
+</menu>

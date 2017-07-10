@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_shortcut_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/parent_margin">
+
+    <EditText
+        android:id="@+id/mContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_white_edittext"
+        android:gravity="top"
+        android:hint="@string/app_createblog_hint"
+        android:lineSpacingExtra="4dp"
+        android:minLines="5"
+        android:maxLength="1000"
+        android:padding="@dimen/parent_margin"
+        android:textColor="@color/tvc6"
+        android:textColorHint="@color/tvc9"
+        android:textSize="@dimen/app_text_14" />
+
+    <TextView
+        android:id="@+id/mContentLength"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@id/mContent"
+        android:gravity="bottom|right"
+        android:paddingBottom="@dimen/parent_margin"
+        android:paddingRight="@dimen/parent_margin"
+        android:text="0"
+        android:textColor="@color/tvc9"
+        android:textSize="@dimen/app_text_14" />
+
+    <TextView
+        android:id="@+id/mCreateBlog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/mContent"
+        android:layout_marginTop="@dimen/parent_margin"
+        android:background="@drawable/style_tijao"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_text_16_middle" />
+
+
+</RelativeLayout>

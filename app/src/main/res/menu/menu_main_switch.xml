@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/mSearch1"
+        android:icon="@mipmap/temp132"
+        android:title="切换公司"
+        app:showAsAction="always"/>
+
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/umeng_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <Button android:layout_width="match_parent"  android:layout_height="45dp"
+        android:text="检查签名"
+        android:id="@+id/umeng_sign"
+        android:textColor="@color/tvc3"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:layout_below="@id/umeng_text"
+        android:layout_marginTop="20dp"
+        android:background="@color/pub_backgroud_color"/>
+    <Button android:layout_width="match_parent"  android:layout_height="45dp"
+        android:text="检查新浪回调地址"
+        android:id="@+id/umeng_redirecturl"
+        android:textColor="@color/tvc3"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:layout_below="@id/umeng_sign"
+        android:layout_marginTop="20dp"
+        android:background="@color/pub_backgroud_color"/>
+    <Button android:layout_width="match_parent"  android:layout_height="45dp"
+        android:text="检查微信回调activity"
+        android:id="@+id/umeng_wx"
+        android:textColor="@color/tvc3"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:layout_below="@id/umeng_redirecturl"
+        android:layout_marginTop="20dp"
+        android:background="@color/pub_backgroud_color"/>
+    <Button android:layout_width="match_parent"  android:layout_height="45dp"
+        android:text="检查新浪回调activity"
+        android:id="@+id/umeng_sina"
+        android:textColor="@color/tvc3"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:layout_below="@id/umeng_wx"
+        android:layout_marginTop="20dp"
+        android:background="@color/pub_backgroud_color"/>
+    <Button android:layout_width="match_parent"  android:layout_height="45dp"
+        android:text="检查支付宝回调activity"
+        android:id="@+id/umeng_alipay"
+        android:textColor="@color/tvc3"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:layout_below="@id/umeng_sina"
+        android:layout_marginTop="20dp"
+        android:background="@color/pub_backgroud_color"/>
+    <Button android:layout_width="match_parent"  android:layout_height="45dp"
+        android:text="检查权限"
+        android:id="@+id/umeng_permission"
+        android:textColor="@color/tvc3"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:layout_below="@id/umeng_sina"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:background="@color/pub_backgroud_color"/>
+
+</RelativeLayout>

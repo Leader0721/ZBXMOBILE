@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:orientation="vertical"
+    android:background="@color/pub_backgroud_color" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/pub_backgroud_color" >
+        
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/style_bt_nav_trans"
+            android:textSize="@dimen/app_text_14"
+            android:textColor="@color/tvc9"
+            android:text="取消" />
+        
+        <TextView
+            android:id="@+id/textview_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/app_text_14"
+            android:textColor="@color/app_colorPrimary" />
+        
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/style_bt_nav_trans"
+            android:textSize="@dimen/app_text_14"
+            android:textColor="@color/app_theme"
+            android:text="确定" />
+        
+	</LinearLayout>
+	    
+    <ListView
+        android:id="@+id/listview_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:scrollbars="none" >
+
+    </ListView>
+
+</LinearLayout>

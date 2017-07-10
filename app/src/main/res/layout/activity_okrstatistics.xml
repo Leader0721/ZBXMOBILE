@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/okr_background3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editsharp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/arrow_group_expand"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/tvc6"
+                android:textSize="@dimen/app_text_14"/>
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/editsharp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/arrow_group_expand"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="综合显示"
+                android:textColor="@color/tvc6"
+                android:textSize="@dimen/app_text_14"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_search_people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:background="@color/main_tab_text_blue">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="7dp"
+                android:text="查询人员:"
+                android:textSize="@dimen/app_text_16_middle" />
+
+
+            <TextView
+                android:id="@+id/tv_workers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请选择查询人员 "
+                android:padding="7dp"
+                android:singleLine="true"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/app_text_16_middle" />
+                android:textSize="@dimen/app_text_16_middle"/>
+
+            <ImageView
+                android:paddingRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/arrow_right_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/bt_search" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/accent">
+        <com.zbxn.pub.widget.ProgressWebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"></com.zbxn.pub.widget.ProgressWebView>
+    </ScrollView>
+</LinearLayout>

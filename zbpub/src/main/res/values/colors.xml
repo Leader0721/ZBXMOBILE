@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="app_listview_slidemenu_1">#ff9d00</color>
+    <color name="app_main_shortcut_bg">#E6ffffff</color>
+
+    <color name="icon_disabled">#D5D5D6</color>
+    <color name="accent">#40C4FF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- 状态栏颜色 -->
+    <color name="statusBar_color">#343b44</color>
+
+    <!--时间选择器-->
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+
+
+    <!-- 通用颜色 -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <!--红色-->
+    <color name="red">#ff0000</color>
+    <!--橙色-->
+    <color name="orange">#FF8C00</color>
+    <!--橙色深-->
+    <color name="orange_deep">#be6c08</color>
+    <!--橙红色-->
+    <color name="orange_red">#ec6945</color>
+
+    <!-- 分割线颜色 -->
+    <color name="pub_line_color">#ffe9e9e9</color>
+
+    <color name="tvc3">#333333</color>
+    <color name="tvc6">#666666</color>
+    <color name="tvc9">#999999</color>
+
+    <color name="pub_backgroud_color">#ebeff6</color>
+    <!-- 底边栏底色 -->
+    <color name="bottom_bar">#8e8d8d</color>
+    <!-- 取消按钮底色 -->
+    <color name="cancel">#EC4F43</color>
+    <color name="cancel_dark">#ab342b</color>
+
+    <color name="main_tab_text_gray">#979797</color>
+    <color name="main_tab_text_blue">#2b96da</color>
+    <color name="main_tab_text_blue_dark">#207AB3</color>
+    <color name="main_tab_text_wathet">#f0faf9</color>
+    <color name="bg_floder_press">#bdbdbd</color>
+    <color name="bg_button_moren">#dcdcdc</color>
+</resources>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/parent_margin_large">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="用户号"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/mUserNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="24dp"
+            android:textColor="@color/app_secondary_text"
+            android:textSize="@dimen/app_text_14" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/pub_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="公\u3000司"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/mCompanyName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="24dp"
+            android:textColor="@color/app_secondary_text"
+            android:textSize="@dimen/app_text_14" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/pub_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="部\u3000门"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/mDepartmentName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="24dp"
+            android:textColor="@color/app_secondary_text"
+            android:textSize="@dimen/app_text_14" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/pub_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="职\u3000位"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/mPosition"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="24dp"
+            android:textColor="@color/app_secondary_text"
+            android:textSize="@dimen/app_text_14" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/pub_line_color" />
+
+    <LinearLayout
+        android:id="@+id/mLayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="邮\u3000箱"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/mEmail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="24dp"
+            android:textColor="@color/cpb_blue"
+            android:textSize="@dimen/app_text_14" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/temp131" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/pub_line_color" />
+
+    <LinearLayout
+        android:id="@+id/mLayoutMobile"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="手\u3000机"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/mMobileNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="24dp"
+            android:textColor="@color/cpb_blue"
+            android:textSize="@dimen/app_text_14" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/temp129" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/pub_line_color" />
+
+    <LinearLayout
+        android:id="@+id/mLayoutPhone"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="电\u3000话"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/mPhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="24dp"
+            android:textColor="@color/cpb_blue"
+            android:textSize="@dimen/app_text_14" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/temp130" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/pub_line_color" />
+
+</LinearLayout>

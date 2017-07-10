@@ -1,0 +1,10 @@
+以下是SmartLib中没有引入的开源库，使用AS时直接在gradle中配置，使用Eclipse需要先下载以下开源库并在Telchina中引用；
+1. https://github.com/google/gson
+2. https://github.com/loopj/android-async-http
+3. https://github.com/nostra13/Android-Universal-Image-Loader
+4. https://github.com/ToxicBakery/ViewPagerTransforms.git
+5. https://github.com/hdodenhof/CircleImageView
+6. https://github.com/dmytrodanylyk/circular-progress-button.git
+7. https://github.com/saiwu-bigkoo/Android-ConvenientBanner
+8. https://github.com/DreaminginCodeZH/MaterialProgressBar
+9. http://jakewharton.github.io/butterknife/

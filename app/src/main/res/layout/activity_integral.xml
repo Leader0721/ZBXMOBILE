@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:orientation="vertical">
+
+    <widget.smarttablayout.SmartTabLayout
+        android:id="@+id/mSmartTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:paddingBottom="2dp"
+        app:stl_customTabTextLayoutId="@layout/workblogdetail_tab"
+        app:stl_customTabTextViewId="@+id/textview_tabname"
+        app:stl_indicatorColor="@color/main_tab_text_blue"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="2dp"
+        app:stl_underlineThickness="2dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height" />
+
+    <RelativeLayout
+        android:id="@+id/mHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clickable="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mPortrait"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/parent_margin"
+            android:layout_marginLeft="@dimen/parent_margin"
+            android:layout_marginTop="@dimen/parent_margin"
+            android:src="@mipmap/userhead_img"
+            app:civ_border_color="@color/app_divider"
+            app:civ_border_overlay="true"
+            app:civ_border_width="1px"
+            app:civ_fill_color="@color/pub_backgroud_color" />
+
+
+        <TextView
+            android:id="@+id/mName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/mPortrait"
+            android:layout_toRightOf="@+id/mPortrait"
+            android:text="徐然"
+            android:textColor="@color/tvc3"
+            android:textSize="@dimen/app_text_16_middle" />
+
+        <LinearLayout
+            android:id="@+id/ll_need"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="132dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距"
+                android:textColor="@color/tvc6"
+                android:textSize="@dimen/app_text_14" />
+
+            <TextView
+                android:id="@+id/tv_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="C商品"
+                android:textColor="@color/black"
+                android:textSize="@dimen/app_text_14" />
+
+            <TextView
+                android:id="@+id/tv_need"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="差--N币"
+                android:textColor="@color/tvc6"
+                android:textColorHint="@color/tvc6"
+                android:textSize="@dimen/app_text_14" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mTotalIntegral"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/mTotalIntegral"
+            android:layout_toStartOf="@+id/mTotalIntegral"
+            android:text="累计N币:"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/mTotalIntegral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="10dp"
+            android:text="---"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/app_text_14" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

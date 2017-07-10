@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@android:color/transparent" >
+
+    <LinearLayout
+		android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_text_16_middle"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginRight="?attr/actionBarSize" />
+
+	</LinearLayout>
+
+</RelativeLayout>

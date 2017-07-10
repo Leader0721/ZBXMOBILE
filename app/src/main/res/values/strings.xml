@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_main_blogcenter_message">您今天已写过日志, 是否需要重新编辑?</string>
+    <string name="app_createblog_hint">在这里写日志(20——1000字)</string>
+    <string name="app_searchcontacts_hint">输入姓名/电话/部门</string>
+    <string name="app_searchcontacts_feedback">输入反馈意见，我们会及时查看</string>
+    <string name="app_createbulletin_hint1">标题(200字符以内)</string>
+    <string name="app_createbulletin_hint2">在这里写内容 ···(1000字符以内)</string>
+    <string name="app_createbulletin_default">未选择接收人</string>
+    <string name="app_mission_describe_default">任务内容描述</string>
+    <string name="app_mission_tishi">确认任务是否已完成？</string>
+
+
+    <string name="app_guider_page1">每个人都握着移动的数据</string>
+    <string name="app_guider_page2">实现安全扁平化的安全协作</string>
+    <string name="app_guider_page3">工作任务可视化，拥有自己的专属节奏</string>
+    <string name="app_guider_page4">享受工作的每一分</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

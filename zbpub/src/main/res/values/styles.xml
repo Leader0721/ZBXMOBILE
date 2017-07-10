@@ -1,0 +1,35 @@
+<resources>
+
+    <style name="circularprogressbutton_default">
+        <item name="cpb_cornerRadius">2dp</item>
+        <item name="cpb_selectorIdle">@drawable/style_circularprogressbutton_theme</item>
+        <item name="cpb_colorIndicator">@color/app_theme</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="progressDialog" parent="@android:style/Theme.Holo.Light.Dialog.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowBackground">@drawable/bg_dialog_1</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <!-- 自定义对话框 -->
+    <style name="dialog_alert" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+        <!-- 模糊 -->
+    </style>
+</resources>

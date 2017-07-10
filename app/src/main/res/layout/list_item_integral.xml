@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/mLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/parent_margin"
+        android:paddingTop="@dimen/parent_margin">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mPortrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/parent_margin"
+            android:src="@mipmap/temp110"
+            app:civ_border_color="@color/app_divider"
+            app:civ_border_overlay="true"
+            app:civ_border_width="1px"
+            app:civ_fill_color="@color/pub_backgroud_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/parent_margin"
+            android:gravity="center"
+            android:minWidth="40dp">
+
+            <TextView
+                android:id="@+id/mRanking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/one"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/tvc9"
+                android:textSize="@dimen/app_text_14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/parent_margin"
+            android:ellipsize="end"
+            android:ems="5"
+            android:singleLine="true"
+            android:text="姓名"
+            android:textColor="@color/tvc3"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/parent_margin"
+            android:layout_marginRight="@dimen/parent_margin"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="ID:1234567890123"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+
+        <TextView
+            android:id="@+id/mIntegral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="888"
+            android:textSize="@dimen/app_text_14"
+            android:textColor="@color/orange" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 登录页 -->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mContentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@mipmap/bg_launcher_ont" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:background="@drawable/bg_login_layout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/myUserName"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/bg_user" />
+
+                <EditText
+                    android:clickable="true"
+                    android:id="@+id/mUserName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="输入用户名"
+                    android:maxLength="32"
+                    android:singleLine="true"
+                    android:textColor="@color/tvc3"
+                    android:textColorHint="@color/tvc9"
+                    android:textSize="@dimen/app_text_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/pub_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/myPassword"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/bg_password" />
+
+                <EditText
+                    android:clickable="true"
+                    android:id="@+id/mPassword"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="输入密码"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/tvc3"
+                    android:textColorHint="@color/tvc9"
+                    android:textSize="@dimen/app_text_14" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/mBtnLogin"
+            style="@style/circularprogressbutton_default"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:textSize="@dimen/app_text_16_middle"
+            app:cpb_textIdle="登录" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/mForgetPassword"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_vertical|right"
+                android:text="忘记密码"
+                android:textColor="@color/tvc6"
+                android:textSize="@dimen/app_text_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app_text_20_large"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:paddingBottom="@dimen/app_text_8">
+
+            <TextView
+                android:id="@+id/mRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="15dp"
+                android:text="注册"
+                android:textColor="@color/main_tab_text_blue"
+                android:textSize="@dimen/app_text_14"
+                 />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

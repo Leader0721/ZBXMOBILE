@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color">
+
+    <com.zbxn.pub.widget.ProgressWebView
+        android:id="@+id/mWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/applyEnd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tv"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/parent_margin"
+            android:text="同意并结束" />
+
+        <View
+            android:id="@+id/view_next"
+            android:layout_width="@dimen/line_height"
+            android:layout_height="match_parent"
+            android:background="@color/pub_backgroud_color" />
+
+        <TextView
+            android:id="@+id/applyNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tv"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/parent_margin"
+            android:text="同意并转审批" />
+
+        <View
+            android:id="@+id/view_stop"
+            android:layout_width="@dimen/line_height"
+            android:layout_height="match_parent"
+            android:background="@color/pub_backgroud_color" />
+
+        <TextView
+            android:id="@+id/applyStop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tv"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/parent_margin"
+            android:text="驳回" />
+
+    </LinearLayout>
+</RelativeLayout>

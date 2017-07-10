@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mDrawerLayout_newOkr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pub_backgroud_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@mipmap/ranking_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通用积分排名:"
+                android:textSize="@dimen/app_text_15" />
+
+            <TextView
+                android:id="@+id/general_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text=""
+                android:textColor="#FD6500"
+                android:textSize="@dimen/app_text_15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:text="业务积分排名:"
+                android:textSize="@dimen/app_text_15" />
+
+            <TextView
+                android:id="@+id/business_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text=""
+                android:textColor="#FD6500"
+                android:textSize="@dimen/app_text_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/parent_margin"
+                android:text="姓名/部门"
+                android:textColor="@color/tvc6" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/parent_margin"
+                android:text="排名"
+                android:textColor="@color/tvc6" />
+
+
+            <LinearLayout
+                android:id="@+id/general_integral"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/parent_margin"
+                android:paddingTop="@dimen/parent_margin">
+
+                <TextView
+                    android:id="@+id/general_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="通用"
+                    android:textColor="@color/tvc6" />
+
+                <ImageView
+                    android:id="@+id/general_img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/parent_margin_top"
+                    android:src="@mipmap/rank_null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/business_integral"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/parent_margin"
+                android:paddingTop="@dimen/parent_margin">
+
+                <TextView
+                    android:id="@+id/business_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="业务"
+                    android:textColor="@color/tvc6" />
+
+                <ImageView
+                    android:id="@+id/business_img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/parent_margin_top"
+                    android:src="@mipmap/rank_null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/okr_integral"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/parent_margin"
+                android:paddingTop="@dimen/parent_margin">
+
+                <TextView
+                    android:id="@+id/okr_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="OKR"
+                    android:textColor="@color/tvc6" />
+
+                <ImageView
+                    android:id="@+id/okr_img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/parent_margin_top"
+                    android:src="@mipmap/rank_down" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/pub_line_color" />
+
+        <com.zbxn.widget.pulltorefreshlv.PullRefreshListView
+            android:id="@+id/okr_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/pub_line_color"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:headerDividersEnabled="false" />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/mNewOkr_SelectBy_Fragment"
+        android:name="com.zbxn.fragment.NewOkr_SelectBy_Fragment"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@android:color/white" />
+</android.support.v4.widget.DrawerLayout>

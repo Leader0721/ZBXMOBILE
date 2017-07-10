@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/style_list_trans_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mLayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/parent_margin">
+
+        <ImageView
+            android:id="@+id/mPortrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="@dimen/parent_margin"
+            android:src="@mipmap/my_administrative" />
+
+        <TextView
+            android:id="@+id/mRemarkName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/parent_margin"
+            android:text="姓名"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_14" />
+
+
+        <ImageView
+            android:id="@+id/mImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/parent_margin"
+            android:scaleType="centerInside"
+            android:src="@mipmap/bg_divider_1" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="50dp"
+        android:background="@color/pub_line_color" />
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/mScrollView"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/mContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:lineSpacingExtra="4dp"
+            android:padding="@dimen/parent_margin"
+            android:textColor="@color/tvc6"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/app_text_14"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/parent_margin"
+            android:focusable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mContentLength"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:padding="@dimen/parent_margin"
+                android:text="123字"
+                android:textColor="@color/tvc9"
+                android:textSize="@dimen/app_text_14"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/mIcon"
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/bg_mobile"
+                    />
+
+                <TextView
+                    android:id="@+id/mOrigin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:padding="@dimen/parent_margin"
+                    android:text="来自移动端"
+                    android:textColor="@color/tvc9"
+                    android:textSize="@dimen/app_text_14"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <fragment
+            android:id="@+id/mCommentFragment"
+            android:name="com.zbxn.fragment.CommentFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

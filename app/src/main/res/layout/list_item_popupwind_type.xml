@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/style_list_trans_white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/m_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/parent_margin"
+            android:layout_marginRight="@dimen/parent_margin"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="全部"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_14" />
+
+        <ImageView
+            android:id="@+id/image_sel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/parent_margin"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:layout_marginLeft="@dimen/parent_margin"-->
+        <!--android:background="@color/pub_line_color" />-->
+</RelativeLayout>

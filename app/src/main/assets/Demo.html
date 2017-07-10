@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <title>HTML Editor Test</title>
+    <style type="text/css" media="screen">
+        #editor {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        min-height: 200px;
+        border: 0px solid #888;
+        background: transparent;
+        color: #2b2b2b;
+        font: 14px Helvetica, arial, sans-serif;
+        cursor: text;
+        }
+    </style>
+    <!--<style type="text/css" media="screen">
+        #editor {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        min-height: 200px;
+        border: 0px solid #888;
+        padding: 1em;
+        background: transparent;
+        color: #2b2b2b;
+        font: 13px/1.35 Helvetica, arial, sans-serif;
+        cursor: text;
+        }
+    </style>-->
+</head>
+<body>
+
+<script type="text/javascript" src="build/squire-raw.js"></script>
+<div id="editor"></div>
+<script type="text/javascript" charset="utf-8">
+  var div = document.getElementById( 'editor' );
+  var editor = new Squire( div, {
+      blockTag: 'p',
+      blockAttributes: {'class': 'paragraph'},
+      tagAttributes: {
+          ul: {'class': 'UL'},
+          ol: {'class': 'OL'},
+          li: {'class': 'listItem'},
+          a: {'target': '_blank'}
+      }
+  });
+  Squire.prototype.makeHeader = function() {
+    return this.modifyBlocks( function( frag ) {
+      var output = this._doc.createDocumentFragment();
+      var block = frag;
+      while ( block = Squire.getNextBlock( block ) ) {
+        output.appendChild(
+          this.createElement( 'h2', [ Squire.empty( block ) ] )
+        );
+      }
+      return output;
+    });
+  };
+
+  document.addEventListener( 'click', function ( e ) {
+    var id = e.target.id,
+        value;
+    if ( id && editor && editor[ id ] ) {
+      if ( e.target.className === 'prompt' ) {
+        value = prompt( 'Value:' );
+      }
+      editor[ id ]( value );
+    }
+  }, false );
+
+function setHTML(html) {
+    editor.setHTML(html);
+}
+function getHTML() {
+   var htmlStr = editor.getHTML();
+       document.location = "gethtml:"+htmlStr;
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/style_list_trans_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/sched_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:00"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_10" />
+
+            <TextView
+                android:id="@+id/sched_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:00"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_10" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/pub_line_color" />
+
+            <ImageView
+                android:id="@+id/sched_circle"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/schedule_circle_type2" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/parent_margin"
+            android:layout_marginRight="@dimen/parent_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/myName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/sched_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/temp110"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/sched_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/app_text_8"
+                    android:text="张三"
+                    android:textColor="@color/tvc6"
+                    android:textSize="@dimen/app_text_14" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sched_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/app_text_8"
+                android:singleLine="true"
+                android:text="销售总结大会"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_16_middle"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/myContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/location" />
+
+                <TextView
+                    android:id="@+id/sched_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开发部"
+                    android:textColor="@color/tvc3"
+                    android:textSize="@dimen/app_text_14" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/parent_margin"
+                android:background="@color/pub_line_color" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

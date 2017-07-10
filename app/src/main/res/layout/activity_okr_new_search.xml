@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_Tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/parent_margin"
+        android:text="历史搜索"
+        android:textColor="@color/tvc6"
+        android:textSize="@dimen/app_text_16_middle" />
+
+    <ImageView
+        android:id="@+id/image_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/pub_line_color" />
+
+    <ListView
+        android:id="@+id/listView_NewOkrSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/pub_line_color"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:headerDividersEnabled="true" />
+</LinearLayout>

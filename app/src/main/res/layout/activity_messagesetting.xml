@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/pub_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <LinearLayout
+            android:id="@+id/mMessageNone"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="消息免打扰"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_16_middle" />
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/bg_divider_1" />
+        </LinearLayout>
+        <View
+            android:background="@color/pub_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="日志消息"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_16_middle" />
+
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/mToggleButtonWorkBlog"
+                android:layout_width="54dp"
+                android:layout_height="30dp"
+                toggle:tbBorderWidth="1dp"
+                toggle:tbOffBorderColor="#b4b6b5"
+                toggle:tbOffColor="#b4b6b5"
+                toggle:tbOnColor="@color/main_tab_text_blue"
+                toggle:tbSpotColor="@color/pub_backgroud_color" />
+        </LinearLayout>
+        <View
+            android:background="@color/pub_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="公告消息"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_16_middle" />
+
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/mToggleButtonBulletIn"
+                android:layout_width="54dp"
+                android:layout_height="30dp"
+                toggle:tbBorderWidth="1dp"
+                toggle:tbOffBorderColor="#b4b6b5"
+                toggle:tbOffColor="#b4b6b5"
+                toggle:tbOnColor="@color/main_tab_text_blue"
+                toggle:tbSpotColor="@color/pub_backgroud_color" />
+        </LinearLayout>
+        <View
+            android:background="@color/pub_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="日程消息"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_16_middle" />
+
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/mToggleButtonSchedule"
+                android:layout_width="54dp"
+                android:layout_height="30dp"
+                toggle:tbBorderWidth="1dp"
+                toggle:tbOffBorderColor="#b4b6b5"
+                toggle:tbOffColor="#b4b6b5"
+                toggle:tbOnColor="@color/main_tab_text_blue"
+                toggle:tbSpotColor="@color/pub_backgroud_color" />
+        </LinearLayout>
+        <View
+            android:background="@color/pub_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="审批消息"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_16_middle" />
+
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/mToggleButtonApply"
+                android:layout_width="54dp"
+                android:layout_height="30dp"
+                toggle:tbBorderWidth="1dp"
+                toggle:tbOffBorderColor="#b4b6b5"
+                toggle:tbOffColor="#b4b6b5"
+                toggle:tbOnColor="@color/main_tab_text_blue"
+                toggle:tbSpotColor="@color/pub_backgroud_color" />
+        </LinearLayout>
+        <View
+            android:background="@color/pub_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="任务消息"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_16_middle" />
+
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/mToggleButtonMission"
+                android:layout_width="54dp"
+                android:layout_height="30dp"
+                toggle:tbBorderWidth="1dp"
+                toggle:tbOffBorderColor="#b4b6b5"
+                toggle:tbOffColor="#b4b6b5"
+                toggle:tbOnColor="@color/main_tab_text_blue"
+                toggle:tbSpotColor="@color/pub_backgroud_color" />
+        </LinearLayout>
+        <View
+            android:background="@color/pub_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

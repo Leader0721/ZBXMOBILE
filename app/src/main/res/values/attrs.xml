@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--上拉下拉刷新组件-->
+    <declare-styleable name="PullToRefresh">
+        <attr name="isRefreshEnable" format="boolean" />
+        <attr name="isLoadEnable" format="boolean" />
+        <attr name="isSetEmptyEnable" format="boolean" />
+    </declare-styleable>
+
+</resources>

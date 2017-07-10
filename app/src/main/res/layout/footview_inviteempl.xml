@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/footView_invite"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_edittext_shape"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/footview_textInvite"
+            android:focusableInTouchMode="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/my_tianjia"
+            android:text="  邀  请  员  工"
+            android:textColor="@color/tvc3"
+            android:textSize="@dimen/app_text_14" />
+    </LinearLayout>
+</LinearLayout>

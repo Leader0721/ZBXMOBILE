@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/new_okr_search"
+        android:icon="@mipmap/nav_search"
+        android:title="搜索"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/new_okr_screening"
+        android:icon="@mipmap/nav_screening"
+        android:title="分类检索"
+        app:showAsAction="always"/>
+
+
+</menu>

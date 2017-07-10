@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/app_text_10"
+            android:src="@mipmap/timeattendance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/app_text_10"
+            android:gravity="center"
+            android:text="考勤时间"
+            android:textColor="@color/tvc6" />
+
+        <TextView
+            android:id="@+id/mTimeStart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/parent_margin"
+            android:gravity="center"
+            android:text="11:20"
+            android:textColor="@color/tvc6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/tvc6" />
+
+        <TextView
+            android:id="@+id/mTimeEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="11:20"
+            android:textColor="@color/tvc6" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/parent_margin"
+        android:background="@color/pub_line_color" />
+
+</LinearLayout>

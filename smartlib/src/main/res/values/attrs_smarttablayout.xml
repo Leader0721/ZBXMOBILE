@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="stl_SmartTabLayout">
+
+        <!-- If set to true, active tab is always displayed in center (Like Newsstand google app), default false -->
+        <attr name="stl_indicatorAlwaysInCenter" format="boolean" />
+        <!-- If set to true, draw the indicator without padding of tab, default false -->
+        <attr name="stl_indicatorWithoutPadding" format="boolean" />
+        <!-- Draw the indicator in front of the underline, default false -->
+        <attr name="stl_indicatorInFront" format="boolean" />
+        <!-- Behavior of the indicator: 'linear' or 'smart' -->
+        <attr name="stl_indicatorInterpolation" format="enum">
+            <enum name="smart" value="0" />
+            <enum name="linear" value="1" />
+        </attr>
+        <!-- Drawing position of the indicator: 'bottom' or 'top' or 'center', default 'bottom' -->
+        <attr name="stl_indicatorGravity" format="enum">
+            <enum name="bottom" value="0" />
+            <enum name="top" value="1" />
+            <enum name="center" value="2" />
+        </attr>
+        <!-- Color of the indicator -->
+        <attr name="stl_indicatorColor" format="color" />
+        <!-- Multiple colors of the indicator, can set the color for each tab -->
+        <attr name="stl_indicatorColors" format="reference" />
+        <!-- Thickness of the indicator -->
+        <attr name="stl_indicatorThickness" format="dimension" />
+        <!-- Width of the indicator, default 'auto' -->
+        <attr name="stl_indicatorWidth" format="dimension">
+            <enum name="auto" value="-1" />
+        </attr>
+        <!-- Radius of rounded corner the indicator -->
+        <attr name="stl_indicatorCornerRadius" format="dimension" />
+        <!-- Color of the top line -->
+        <attr name="stl_overlineColor" format="color" />
+        <!-- Thickness of the top line -->
+        <attr name="stl_overlineThickness" format="dimension" />
+        <!-- Color of the bottom line -->
+        <attr name="stl_underlineColor" format="color" />
+        <!-- Thickness of the bottom line -->
+        <attr name="stl_underlineThickness" format="dimension" />
+        <!-- Color of the dividers between tabs -->
+        <attr name="stl_dividerColor" format="color" />
+        <!-- Multiple colors of the dividers between tabs, can set the color for each tab -->
+        <attr name="stl_dividerColors" format="reference" />
+        <!-- Thickness of the divider -->
+        <attr name="stl_dividerThickness" format="dimension" />
+        <!-- Background drawable of each tab. In general it set the StateListDrawable -->
+        <attr name="stl_defaultTabBackground" format="reference" />
+        <!-- If set to true, all tab titles will be upper case, default true -->
+        <attr name="stl_defaultTabTextAllCaps" format="boolean" />
+        <!-- Text color of the tab that was included by default -->
+        <attr name="stl_defaultTabTextColor" format="color|reference" />
+        <!-- Text size of the tab that was included by default -->
+        <attr name="stl_defaultTabTextSize" format="dimension" />
+        <!-- Text layout padding of the tab that was included by default -->
+        <attr name="stl_defaultTabTextHorizontalPadding" format="dimension" />
+        <!-- Minimum width of tab -->
+        <attr name="stl_defaultTabTextMinWidth" format="dimension" />
+        <!-- Layout ID defined custom tab. If you do not specify a layout, use the default tab -->
+        <attr name="stl_customTabTextLayoutId" format="reference" />
+        <!-- Text view ID in a custom tab layout. If you do not define with customTabTextLayoutId, does not work -->
+        <attr name="stl_customTabTextViewId" format="reference" />
+        <!-- If set to true, each tab is given the same weight, default false -->
+        <attr name="stl_distributeEvenly" format="boolean" />
+        <!-- If set to false, disable the selection of a tab click, default true -->
+        <attr name="stl_clickable" format="boolean" />
+        <!-- If set to 'auto_center', the slide position of the tab in the middle it will keep to the center. If specify a dimension it will be offset from the left edge, default 24dp -->
+        <attr name="stl_titleOffset" format="dimension">
+            <enum name="auto_center" value="-1" />
+        </attr>
+        <!-- Draw the decoration(indicator and lines) after drawing of tab, default false -->
+        <attr name="stl_drawDecorationAfterTab" format="boolean" />
+    </declare-styleable>
+
+</resources>

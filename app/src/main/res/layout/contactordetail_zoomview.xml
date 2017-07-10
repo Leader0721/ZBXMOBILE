@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/my_background" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mPortrait"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/temp110"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_overlay="true"
+        app:civ_border_width="2dp"
+        app:civ_fill_color="@android:color/white" />
+
+    <TextView
+        android:id="@+id/mRemarkName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mPortrait"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="用户名"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/app_text_16_middle" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/opinion_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/parent_margin"
+        android:text="当前流程自由流程，固定表单"
+        android:textColor="@color/tvc3"
+        android:textSize="@dimen/app_text_14" />
+
+    <EditText
+        android:id="@+id/opinion_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="top"
+        android:padding="@dimen/parent_margin_top"
+        android:hint="请填写意见说明（必填），确定即为该节点同意。"
+        android:minLines="3"
+        android:layout_margin="@dimen/parent_margin"
+        android:textSize="@dimen/app_text_14"
+        android:textColor="@color/tvc3"
+        android:textColorHint="@color/tvc9" />
+
+    <LinearLayout
+        android:id="@+id/opinion_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/parent_margin_top"
+        android:background="@color/pub_backgroud_color"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/parent_margin"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转交下一审批人"
+            android:textColor="@color/tvc3"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/opinion_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/parent_margin_top"
+            android:background="?attr/selectableItemBackground"
+            android:hint="请选择"
+            android:textColor="@color/tvc3"
+            android:textColorHint="@color/tvc9" />
+    </LinearLayout>
+
+</LinearLayout>
